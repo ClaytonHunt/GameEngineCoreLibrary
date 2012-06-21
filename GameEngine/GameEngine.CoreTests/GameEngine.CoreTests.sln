@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 11
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameEngine.Core.UnitTests", "GameEngine.Core.UnitTests.csproj", "{F91E3E1A-7FC0-406E-9519-6583F5686E19}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A6FEA1C7-EEE9-46E2-8093-85C6F4C6FBCF}"
@@ -14,10 +14,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameEngine.Core", "GameEngi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameEngine.Core.VisualTests", "GameEngine.Core.VisualTests\GameEngine.Core.VisualTests.csproj", "{59489015-C6D5-46FA-9D2D-6D2DC00B7EFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeLibrary", "..\..\..\Code-Library\CodeLibrary\CodeLibrary\CodeLibrary.csproj", "{8E880DBF-5753-4539-B448-0FA27CCBC5F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryTests", "..\..\..\Code-Library\CodeLibrary\LibraryTests\LibraryTests.csproj", "{B54384DF-8776-4795-9011-389CA439145D}"
+EndProject
 Global
-	GlobalSection(TestCaseManagementSettings) = postSolution
-		CategoryFile = GameEngine.CoreTests.vsmdi
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -31,6 +32,14 @@ Global
 		{814446EB-C284-4A3E-AF06-608666A1B8D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{814446EB-C284-4A3E-AF06-608666A1B8D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{814446EB-C284-4A3E-AF06-608666A1B8D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E880DBF-5753-4539-B448-0FA27CCBC5F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E880DBF-5753-4539-B448-0FA27CCBC5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E880DBF-5753-4539-B448-0FA27CCBC5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E880DBF-5753-4539-B448-0FA27CCBC5F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B54384DF-8776-4795-9011-389CA439145D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B54384DF-8776-4795-9011-389CA439145D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B54384DF-8776-4795-9011-389CA439145D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B54384DF-8776-4795-9011-389CA439145D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F91E3E1A-7FC0-406E-9519-6583F5686E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F91E3E1A-7FC0-406E-9519-6583F5686E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F91E3E1A-7FC0-406E-9519-6583F5686E19}.Release|Any CPU.ActiveCfg = Release|Any CPU

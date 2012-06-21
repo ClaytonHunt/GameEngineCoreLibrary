@@ -45,12 +45,18 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClasslessLevelingSystem\LevelingSystemTests.cs" />
+    <Compile Include="GameConsole\GameConsoleTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PlayerTests.cs" />
     <Compile Include="PathingTests.cs" />
     <Compile Include="WorldTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Code-Library\CodeLibrary\CodeLibrary\CodeLibrary.csproj">
+      <Project>{8e880dbf-5753-4539-b448-0fa27ccbc5f3}</Project>
+      <Name>CodeLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="GameEngine.Core\GameEngine.Core.csproj">
       <Project>{814446eb-c284-4a3e-af06-608666a1b8d0}</Project>
       <Name>GameEngine.Core</Name>
