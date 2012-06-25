@@ -46,6 +46,22 @@ namespace GameEngine.CoreTests.ClasslessLevelingSystem
             // Assert
             Assert.AreEqual("Player: There is no one to attack.", console.LastLogged());
         }
+
+        [TestMethod]
+        public void Given_PlayerAttack_When_TargetIsAquired_Then_LogAttack()
+        {
+            // Arrange
+            var player = new Actor();
+            var enemy = new Actor();
+            var console = GameConsole.GameConsole.Instance;
+
+            // Act
+            player.SetTarget(enemy);
+            player.Attack();
+
+            // Assert
+            Assert.AreEqual("Player: Attacks Enemy with his Fist", console.LastLogged());
+        }
     }
 
     public class Actor
@@ -63,6 +79,8 @@ namespace GameEngine.CoreTests.ClasslessLevelingSystem
                 this._weapon = value;
             }
         }
+
+        private Actor _target;
 
         public void EquipWeapon(EquipableWeapon weapon = null)
         {
@@ -82,7 +100,15 @@ namespace GameEngine.CoreTests.ClasslessLevelingSystem
 
         public void Attack()
         {
-            GameConsole.GameConsole.Instance.LogMessage("Player: There is no one to attack.");
+            if (this._target == null)
+                GameConsole.GameConsole.Instance.LogMessage("Player: There is no one to attack.");
+            else
+                GameConsole.GameConsole.Instance.LogMessage("Player: Attacks Enemy with his Fist");
+        }
+
+        public void SetTarget(Actor target)
+        {
+            this._target = target;
         }
     }
 
